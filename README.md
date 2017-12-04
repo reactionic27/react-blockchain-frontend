@@ -3,7 +3,7 @@
 ## Usage
 
 ```
-git clone https://github.com/busyorg/busy.git
+git clone https://github.com/reactionic127/react-blockchain-frontend.git
 cd busy
 
 npm install
