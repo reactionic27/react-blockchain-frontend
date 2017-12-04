@@ -1,0 +1,44 @@
+@import (reference) "../styles/modules/variables.less";
+
+.TopicSelector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 @mobile-padding;
+
+  @media @small {
+    padding: 0;
+  }
+
+  &__topics {
+    & > a {
+      &:not(:nth-child(1)) {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &__sort {
+    color: #99aab5;
+    text-align: right;
+
+    &__title {
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    &__current {
+      cursor: pointer;
+      margin-left: 8px;
+      font-weight: 500;
+      white-space: nowrap;
+
+      & > .iconfont {
+        margin-left: 4px;
+        font-size: 16px !important;
+        vertical-align: -1px;
+      }
+    }
+  }
+}
